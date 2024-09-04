@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OnlyJS Ödev</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Ödevi tarayıcınızda görüntüleyebilĞmek için Live Server'ı başlatmalısınız -->
+</head>
+
+<body>
+  <h1>CSS Haftalık Ödev</h1>
+  <h2>1. Görev</h2>
+  <p>
+    Listenin üçüncü elemanının "üçüncü" yazısı,
+    <span class="same-color-text">liste elemanıyla aynı renkte</span> olmalı
+    ama renk kodu kullanarak yapılmamalı. Bu listenin HTML kodu üzerinde
+    değişiklik yapılmayıp sadece "style.css" dosyası ile ayarlanmalı.<br />
+    <small>
+      (Burada CSS'te specificity (keskin belirtme) ve inheritance (miras
+      bırakma) özelliklerinin ikisini birden kullanmamız gerekiyor)
+    </small>
+  </p>
+  <ul class="task-1-list">
+    <li>Listenin <span>ilk</span> elemanı</li>
+    <li>Listenin <span>ikinci</span> elemanı</li>
+    <li id="third-item">Listenin <span>üçüncü</span> elemanı</li>
+    <li>Listenin <span>dördüncü</span> elemanı</li>
+    <li>Listenin <span>beşinci</span> elemanı</li>
+  </ul>
+  <br />
+  <h2>2. Görev</h2>
+  <p>
+    CSS'te inheritance için kullanılan değerleri bu yazının altındaki "ul"
+    listesinin içerisinde listeleyip ne işe yaradıklarını açıklayalım.
+    ("değer" derken kastettiğimiz mesela "width: 200px" tanımındaki "200px"
+    kısmı)
+  </p>
+  <p>
+    4 adet değer yazabiliriz. Videolarda anlatılan üç değer haricinde bir
+    değer daha var, onu da listeye ekleyelim.
+    <br />
+    <small>("css inheritance" şeklinde Google'dan arama yapabiliriz)</small>
+  </p>
+  <!-- Buraya listeleyelim: -->
+  <ul>
+    <li>REM: 1 REM 16 PX DEĞERİNDEDİR. TEMELDEKİ ATANMIŞ BÜYÜKLÜĞÜ ALIR.</li>
+    <li>EM:BODY ETİKETİNDE TANIMLI BİR FONTSIZE VAR İSE ONUN DEĞERİNİ BAZ ALIR. YOK İSE TEMELDE DEĞER OLAN 16 PX BAZ
+      ALIR. </li>
+    <li>% :En yakın kapsayıcısının font-size değerine göre hesaplanır. html{font-size: 75%;} ise 1rem = 16*.75 = 12px
+      olacaktır.</li>
+    <li>PX:dijital göstergelerde görüntünün elde edilmesini sağlayan ve kontrol edilebilen en küçük birimdir.</li>
+  </ul>
+  <br />
+  <h2>3. Görev</h2>
+  <ol>
+    <li>
+      600 piksel genişliği ve 400 piksel yüksekliği olan, arkaplan rengi
+      #F4EEE0 olan, 3 piksellik mavi renkte kenarlığı olan bir "div"
+      oluşturalım
+    </li>
+    <li>
+      Hemen altına 50 piksel dışarıdan aralık bırakarak %30 genişlikte ve
+      300px yükseklikte olan, yine aynı kenarlık ve arkaplan rengine sahip bir
+      div oluşturalım
+    </li>
+    <li>
+      İki div'e de ana elementin (root element) font büyüklüğünün 1.5 katı
+      kadar içeriden boşluk verelim ama sol taraftan verdiğimiz boşluklar özel
+      olarak ana elementin font büyüklüğünün 2 katı olsun
+    </li>
+    <li>
+      Bu boşluğu verdikten sonra div'in boyutları sabit kalsın, boşluk
+      verdiğimiz için dışarıya doğru büyümesin. Bunu kolayca yapmamızı
+      sağlayan, tüm elementlere evrensel bir şekilde etki eden özel css
+      kodumuzu yazalım
+    </li>
+    <li>
+      İçlerine arkaplanı #E1CDA3 renginde olan, 100% genişlik ve yükseklikte
+      olan birer div koyalım
+    </li>
+    <li>Dıştaki div'lerin kenarlıklarına 25 piksellik yuvarlatma yapalım</li>
+    <li>
+      Aynı kodları farklı farklı elementler için tekrar tekrar kullanıyorsak o
+      kodları tek bir class'a taşıyalım ve o elementlerde ortak bir şekilde
+      kullanalım. Ufak tefek farklılıklar varsa o kodları o elemente farklı
+      bir şekilde (farklı bir classla veya id kullanarak vs.) verelim
+    </li>
+  </ol>
+  <p>Elde etmek istediğimiz görünüme örnek:</p>
+  <img src="task3-example.png" alt="Örnek" width="600px" />
+  <br />
+  <small>
+    *Alttaki kutu 30% genişlikte olduğu için ekran boyutuna göre değişiklik
+    gösterir.
+  </small>
+  <!-- 3. görevin çözümünü burada yapabiliriz -->
+
+<div class="bir ortak-div" >
+    <div class="div1">
+
+    </div>
+</div>
+
+<div class="iki ortak-div">
+  <div class="div1">
+
+  </div>
+</div>
+
+
+<!--burada önce div2 açıp sonra aynı işi div1 le halledebileceğimi farkediyorum -->
+</body>
+
+</html>

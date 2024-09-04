@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+/*
+-------------------------------------------
+BURALARDAKİ KODLAR DEĞİŞTİRİLMEMELİ. EN
+AŞAĞIDAKİ NOTU OKUYALIM
+-------------------------------------------
+*/
+
+body {
+  background-color: #393646;
+  color: #f4eee0;
+}
+
+ul li:not(:last-child),
+ol li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.same-color-text {
+  color: #f4e1f4;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+ul.task-1-list li span {
+  color: #e1cda3 !important;
+}
+
+ul.task-1-list li#third-item {
+  color: #f4e1f4;
+}
+
+/*
+-------------------------------------------
+YUKARIDAKİ KODLARI DEĞİŞTİRMEMELİSİNİZ.
+BURADAN AŞAĞIYA ÇÖZÜMÜNÜZÜ YAZABİLİRSİNİZ.
+-------------------------------------------
+*/
+
+ul.task-1-list li#third-item span {
+  color: inherit !important;
+}
+
+div.bir {
+  width: 600px;
+  height: 400px;
+}
+
+/*ayrı kategoride bi ortak class oluşturmayı yardım alarak öğrendim. temiz kod yazmak için önemliymiş. normal şartlarda asla aklıma gelmezdi
+class 'bir' ve class 'iki' nin ortak paydası böylelikle toparlanmış oldu*/
+
+
+
+.ortak-div {
+  background-color: #f4eee0;
+  border: 3px solid blue;
+  margin-bottom: 50px;
+  padding: 1.5rem;
+  padding-left: 2rem;
+  border-radius: 25px;
+}
+
+div.iki {
+  width: 30%;
+  height: 300px;
+}
+
+.div1 {
+  height: 100%;
+  width: 100%;
+  background-color: #e1cda3;
+}
